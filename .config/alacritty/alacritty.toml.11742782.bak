@@ -1,0 +1,84 @@
+# === Шрифт ===
+[font]
+size = 15.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+# Лигатуры в Alacritty не поддерживаются на уровне конфига —
+# они работают автоматически если шрифт их содержит (JetBrainsMono их имеет)
+
+# === Производительность / Скроллинг ===
+[scrolling]
+history = 10000
+
+# === Курсор ===
+[cursor]
+style = { shape = "Block", blinking = "Never" }
+unfocused_hollow = true
+
+# === Мышь ===
+[mouse]
+hide_when_typing = true
+
+# === Окно ===
+[window]
+padding = { x = 8, y = 6 }
+decorations = "Full"        # аналог window-decoration = auto
+dynamic_padding = false
+
+# === Выделение ===
+[selection]
+save_to_clipboard = false
+
+# === Cyberpunk тема ===
+[colors.primary]
+background = "#0d0f14"
+foreground = "#e0e0e0"
+
+[colors.cursor]
+text   = "#0d0f14"
+cursor = "#ff2d78"
+
+[colors.selection]
+background = "#1e2a3a"
+foreground = "#e0e0e0"
+
+# Нормальные (тёмные) цвета — palette 0–7
+[colors.normal]
+black   = "#1a1c24"
+red     = "#ff2d78"
+green   = "#00ff9f"
+yellow  = "#f0c674"
+blue    = "#00b4ff"
+magenta = "#cc44ff"
+cyan    = "#00e5ff"
+white   = "#c5c8c6"
+
+# Яркие варианты — palette 8–15
+[colors.bright]
+black   = "#3a3d4a"
+red     = "#ff5f9e"
+green   = "#39ffc2"
+yellow  = "#f7d89c"
+blue    = "#33ccff"
+magenta = "#d966ff"
+cyan    = "#33eeff"
+white   = "#ffffff"
+
+# bold_is_bright = false (поведение по умолчанию в Alacritty)
+[colors]
+draw_bold_text_with_bright_colors = false
