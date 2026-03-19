@@ -104,6 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias a="php artisan"
-alias cfg='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+cfg() {
+    git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME" "$@"
+}
+compdef cfg=git
 
 export EDITOR='nvim'
